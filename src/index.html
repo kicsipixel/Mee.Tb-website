@@ -9,13 +9,37 @@
         <title>Landing page</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/main.scss">
+        <link href="https://fonts.googleapis.com/css?family=Devonshire|Work+Sans:100,500,700,900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/main.css">
         <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="bg-gray-100 h-screen font-sans">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div class="md:flex">
+            <div class="flex bg-gray-700 md:w-1/2 h-screen justify-center items-center">
+                <div class="flex flex-col">
+                    <div class="flex">
+                        <img class="mt-2 sm:w-8 sm:w-8 w-12 h-12 m-4 md:w-12 md:h-12 md:mt-0 lg:w-16 lg:h-16 lg:mt-4" src="img/beard_white.svg" alt="logo will come here..." />
+                        <h1 class="md:text-4xl lg:text-6xl customh1 text-white">Bearded<span class="customspan font-bold">-life</span></h1>
+                    </div>
+                    <div class="text-xs -mt-4 ml-4 sm:text-xs sm:-mt-6 md:font-hairline md:text-xs md:-mt-4 lg:-mt-6 lg:ml-4 lg:text-base">
+                        <p class="text-white text-center">List of beard care products companies</p>
+                    </div>   
+                </div>
+            </div>
+        
+            <div class="flex md:w-1/2 h-screen justify-center items-center font-bold text-gray-700">
+                <form class="flex flex-col w-full m-8">
+                    <label class="">Newsletter</label>
+                    <input class="border border-gray-300 h-10 rounded pl-2" type="text" placeholder="Your e-mail address will come here..." />
+                    <div class="flex-row">
+                        <a href="#" class="mt-2 bg-gray-700 text-white float-right px-4 py-2 rounded">Sign up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
         
     </body>
 </html>
