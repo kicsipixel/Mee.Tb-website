@@ -1,4 +1,4 @@
-### Landing page using [tailwindcss](https://tailwindcss.com/)
+### Mee.Tb website using [tailwindcss](https://tailwindcss.com/)
 
 #### Screenshot
 ![screenshot](/src/img/screen.png)
