@@ -1,0 +1,8 @@
+#RewriteCond %{HTTP_HOST} ^www [NC]
+#RewriteRule ^(.*)$ https://meetb.purzelbaum.hu/$1 [L,R=301]
+#RewriteCond %{ENV:HTTPS} !=1 [NC]
+#RewriteRule ^(.*)$ https://meetb.purzelbaum.hu/$1 [L,R=301]
+
+RewriteEngine on
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]

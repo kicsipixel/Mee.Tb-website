@@ -1,20 +1,40 @@
-.customh1 {
-    font-family: 'Work Sans', sans-serif;
-	font-weight: 700;
-	font-size: 70px;
+:root {
+    --main: #333;
 }
-.customspan {
-    font-family: 'Devonshire', cursive;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--main);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
     font-weight: 700;
 }
 
-@media only screen and (max-width: 800px) {
-    .customh1 {
-        font-family: 'Work Sans', sans-serif;
-        font-weight: 700;
-        font-size: 40px;
-    }
-    .customspan {
-        font-family: 'Devonshire', cursive;
-    }
-  }
+main {
+    flex: 1;
+}
+
+main h1 {
+    font-weight: 900;
+}
+
+main img {
+    max-width: 1000;
+}
+
+main p {
+    font-weight: 300;
+}
+
+footer {
+    font-weight: 300;
+}
